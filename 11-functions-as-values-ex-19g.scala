@@ -9,11 +9,6 @@ case class Activity(date: String, activity: String) {
 
 val dave = Activity("01-01", "Run")
 
-dave match {
-  case Activity(d, a) if a == "Run" => println(d)
-  case _ => println("No sports")
-}
-
 val activities = Vector(
               Activity("01-01", "Run"),
               Activity("01-03", "Ski"),
